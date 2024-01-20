@@ -128,6 +128,19 @@ h6 {
   padding: 0 0.9375rem;
 }
 
+.button {
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  border-radius: 3.125rem;
+  background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
+}
+
+.button:hover {
+  background: #835ddb;
+}
+
 .ibg {
   width: 100%;
   height: 100%;
@@ -230,19 +243,6 @@ h6 {
   transition: color 0.3s ease 0s;
 }
 
-.button {
-  text-align: center;
-  font-weight: 400;
-  display: inline-block;
-  padding: 0.625rem 1.875rem;
-  border-radius: 3.125rem;
-  background: var(--grad2, linear-gradient(94deg, #C89AFC 9.51%, #7C6AFA 90.23%));
-}
-
-.button:hover {
-  background: #835ddb;
-}
-
 .icon-menu {
   display: none;
 }
@@ -301,6 +301,10 @@ h6 {
 }
 
 @media (max-width: 47.99875em) {
+  .button {
+    padding-right: 30px;
+  }
+
   .menu__body {
     position: fixed;
     width: 100%;
@@ -358,10 +362,6 @@ h6 {
 
   .menu__link {
     font-size: 2.5rem;
-  }
-
-  .button {
-    padding-right: 30px;
   }
 
   .icon-menu {
