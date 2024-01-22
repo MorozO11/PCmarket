@@ -262,7 +262,7 @@ h6 {
 }
 
 .no-webp .main-blok{
-  background: url(../img/bgcpc.png), lightgray 50%/cover no-repeat; }
+  background: url(../img/bgcpc.png) 0 0 no-repeat; }
 
 .main-blok {
   background-size: cover;
@@ -713,4 +713,4 @@ h6 {
 
 .webp body{ background-image: url(../img/bgc.webp); }
 
-.webp .main-blok{ background: url(../img/bgcpc.webp), lightgray 50%/cover no-repeat; }
+.webp .main-blok{ background: url(../img/bgcpc.webp) 0 0 no-repeat; }
