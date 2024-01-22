@@ -1,3 +1,129 @@
 //====================================================================================================
+.main-blok {
+    background: url(../img/bgcpc.png), lightgray 50% / cover no-repeat;
+    ;
+    background-size: cover;
+
+    // .main-blok__container-big
+
+    &__container-big {
+        position: relative;
+    }
+
+    // .main-blok__container
+
+    &__container {
+    }
+
+
+    // .main-blok__content
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        @include adaptiveValue("padding-top", 270, 130);
+        @include adaptiveValue("padding-bottom", 50, 30);
+        display: flex;
+        flex-direction: column;
+    
+    
+
+
+
+    }
+
+    // .main-blok__title
+
+    &__title {
+        max-width: toRem(920);
+        @include adaptiveValue("margin-bottom", 50, 30);
+
+
+    }
+
+    // .main-blok__counter
+
+    &__counter {
+        display: flex;
+        gap: toRem(30);
+        @include adaptiveValue("padding-bottom", 218, 30);
+        @include adaptiveValue("gap", 30, 10);
+
+    }
+
+    // .main-blok__last-line
+
+    &__last-line {}
+
+    // .main-blok__button
+
+    &__button {}
+
+    // .main-blok__people
+
+    &__people {}
+
+    // .main-blok__people-everything
+
+    &__people-everything {}
+
+    // .main-blok__people-number
+
+    &__people-number {}
+
+    // .main-blok__people-finished
+
+    &__people-finished {}
+
+    // .main-blok__money
+
+    &__money {}
+
+    // .main-blok__money-body
+
+    &__money-body {}
+
+    // .main-blok__money-earned
+
+    &__money-earned {}
+
+    // .main-blok__money-number
+
+    &__money-number {}
+
+    // .main-blok__money-progress
+
+    &__money-progress {}
+
+    // .main-blok__money-scale
+
+    &__money-scale {}
+}
+
+
+
+.time-blok {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 102px;
+height: 112px;
+background: #121212;
+}
+
+.number{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700; 
+}
+.measurement{
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400; 
+    opacity: 0.4; 
+}
+
+.button {}
 
 //====================================================================================================

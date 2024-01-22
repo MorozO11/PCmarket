@@ -3,9 +3,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 50;
     @include adaptiveValue("padding-top", 48, 10);
     @include adaptiveValue("padding-bottom", 48, 10);
+    &._header-scroll{
+        padding-top: toRem(20);
+        padding-bottom: toRem(25);
+        background-color:#421468e3;
 
+    } 
     // .header__container-big
 
     &__container-big {
@@ -57,6 +63,7 @@
 .menu {
     padding: 0 toRem(10);
 
+
     // .menu__body
 
     &__body {
@@ -85,8 +92,8 @@
                 left: -100%;
                 transition: all 0.3s ease 0s;
                 width: 100%;
-                @include adaptiveValue("height", 105, 72, 2, 768, 320);
-                background-color: #663e8659;
+                @include adaptiveValue("height", 85, 60, 2, 768, 320);
+                background-color: #421468e3;
                 z-index: 2;
             }
 
@@ -95,6 +102,7 @@
 
                 &::before {
                     left: 0;
+
                 }
             }
         }

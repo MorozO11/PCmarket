@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"MarketPC"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main main-blok">
+				<div class="main-blok__container-big">
+					<div class="main-blok__container">
+						<div class="main-blok__content">
+							<h1 class="main-blok__title title">
+								Перший курс по компютерній збірці </h1>
+						</div>
+						<div class="main-blok__counter">
+							<div class="time-blok" id="days">
+								<ul class="days">
+									<li class="number">18</li>
+									<li class="measurement">Днів</li>
+								</ul>
+							</div>
+							<div class="time-blok" id="hours">
+								<ul class="hours">
+									<li class="number">18</li>
+									<li class="measurement">Годин</li>
+								</ul>
+							</div>
+							<div class="time-blok" id="minutes">
+								<ul class="minutes">
+									<li class="number">18</li>
+									<li class="measurement">Хвилин</li>
+								</ul>
+							</div>
+							<div class="time-blok" id="seconds">
+								<ul class="seconds">
+									<li class="number">18</li>
+									<li class="measurement">Сукунд</li>
+								</ul>
+							</div>
+						</div>
+						<div class="main-blok__last-line">
+							<button type="button" class="main-blok__button button">Замовити курс</button>
+							<div class="main-blok__people">
+								<div class="main-blok__people">
+									<div class="main-blok__people-everything">Учнів всього:</div>
+									<div class="main-blok__people-number">200</div>
+								</div>
+								<div class="main-blok__people">
+									<div class="main-blok__people-finished">Успішно закінчили курс:</div>
+									<div class="main-blok__people-number">190</div>
+								</div>
+								<div class="main-blok__money">
+									<div class="main-blok__money-body">
+										<div class="main-blok__money-earned">Зароблено учнями</div>
+										<div class="main-blok__money-number">400 000₴</div>
+									</div>
+									<div class="main-blok__money-progress">
+										<div class="main-blok__money-scale"></div>
+										<div class="main-blok__money-number">0</div>
+										<div class="main-blok__money-number">1 000 000₴</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
