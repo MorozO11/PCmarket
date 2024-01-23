@@ -79,7 +79,7 @@
             transition: all 0.3s ease 0s;
             overflow: auto;
             gap: toRem(30);
-            background-color: #181f33df;
+            background-color: #181f33f6;
             @include adaptiveValue("padding-top", 180, 120, 2, 768, 320);
             padding-left: toRem(15);
             padding-right: toRem(15);
