@@ -2,9 +2,8 @@
 
 
 .main-blok {
-   background: url("@img/bgcpc.png") center  / cover;
+   background: url("@img/bgcpc.png") center / cover;
    overflow-x: clip;
-   background-position: center center;
 
     // .main-blok__container-big
 
@@ -15,6 +14,8 @@
     // .main-blok__container
 
     &__container {
+        @include adaptiveValue("padding-left", 192, 30);
+
     }
 
 
@@ -40,6 +41,10 @@
         max-width: toRem(920);
         @include adaptiveValue("margin-bottom", 50, 30);
 
+        @media (max-width:$mobileSmall) {
+            text-align: center;
+        }
+
 
     }
 
@@ -50,6 +55,9 @@
         gap: toRem(30);
         @include adaptiveValue("padding-bottom", 218, 30);
         @include adaptiveValue("gap", 30, 10);
+        @media (max-width:$mobileSmall) {
+            text-align: center;
+        }
 
     }
 
