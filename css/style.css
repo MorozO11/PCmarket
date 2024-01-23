@@ -262,10 +262,15 @@ h6 {
 }
 
 .no-webp .main-blok{
-  background: url(../img/bgcpc.png) 0 0 no-repeat; }
+  background: url("../img/bgcpc.png") 0 0 no-repeat; }
 
 .main-blok {
+  overflow-x: clip;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 .main-blok__container-big {
