@@ -262,7 +262,7 @@ h6 {
 }
 
 .no-webp .main-blok{
-  background: url(../img/bgcpc.png) 0 0 no-repeat; }
+  background: url(../img/bgcpc.png); }
 
 .main-blok {
   overflow-x: clip;
@@ -453,7 +453,7 @@ h6 {
     transition: all 0.3s ease 0s;
     overflow: auto;
     gap: 1.875rem;
-    background-color: rgba(24, 31, 51, 0.8745098039);
+    background-color: rgba(24, 31, 51, 0.9647058824);
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     padding-bottom: 1.875rem;
@@ -716,4 +716,4 @@ h6 {
 
 .webp body{ background-image: url(../img/bgc.webp); }
 
-.webp .main-blok{ background: url(../img/bgcpc.webp) 0 0 no-repeat; }
+.webp .main-blok{ background: url(../img/bgcpc.webp); }
