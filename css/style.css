@@ -262,14 +262,16 @@ h6 {
 }
 
 .no-webp .main-blok{
-  background: url("../img/bgcpc.png") 0 0 no-repeat; }
+  background: url("../img/bgcpc.png"); }
 
 .main-blok {
   overflow-x: clip;
   background-position: center center;
-  background-size: 100%;
-  background-size: cover .main-blok __container-big;
-  background-size-position: relative;
+  background-size: cover;
+}
+
+.main-blok__container-big {
+  position: relative;
 }
 
 .main-blok__content {
@@ -713,4 +715,4 @@ h6 {
 
 .webp body{ background-image: url(../img/bgc.webp); }
 
-.webp .main-blok{ background: url(../img/bgcpc.webp) 0 0 no-repeat; }
+.webp .main-blok{ background: url(../img/bgcpc.webp); }
