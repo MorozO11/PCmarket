@@ -1,139 +1,148 @@
 //====================================================================================================
 
-
 .main-blok {
    background: url("@img/bgcpc.png") center / cover;
    overflow-x: clip;
 
-    // .main-blok__container-big
+   // .main-blok__container-big
 
-    &__container-big {
-        position: relative;
-    }
+   &__container-big {
+      position: relative;
+   }
 
-    // .main-blok__container
+   // .main-blok__container
 
-    &__container {
-        @include adaptiveValue("padding-left", 192, 30);
+   &__container {
+      @include adaptiveValue("padding-left", 192, 30);
+   }
 
-    }
+   // .main-blok__content
 
+   &__content {
+      position: relative;
+      z-index: 2;
+      @include adaptiveValue("padding-top", 270, 130);
+      @include adaptiveValue("padding-bottom", 50, 30);
+      display: flex;
+      flex-direction: column;
+   }
 
-    // .main-blok__content
+   // .main-blok__title
 
-    &__content {
-        position: relative;
-        z-index: 2;
-        @include adaptiveValue("padding-top", 270, 130);
-        @include adaptiveValue("padding-bottom", 50, 30);
-        display: flex;
-        flex-direction: column;
-    
-    
+   &__title {
+      max-width: toRem(920);
+      @include adaptiveValue("margin-bottom", 50, 30);
 
+      @media (max-width: $mobileSmall) {
+         text-align: center;
+      }
+   }
 
+   // .main-blok__counter
 
-    }
+   &__counter {
+      display: flex;
+      gap: toRem(30);
+      @include adaptiveValue("padding-bottom", 218, 30);
+      @include adaptiveValue("gap", 30, 10);
 
-    // .main-blok__title
+      @media (max-width: $mobileSmall) {
+         text-align: center;
+      }
+   }
 
-    &__title {
-        max-width: toRem(920);
-        @include adaptiveValue("margin-bottom", 50, 30);
+   // .main-blok__last-line
 
-        @media (max-width:$mobileSmall) {
-            text-align: center;
-        }
+   &__last-line {
+   }
 
+   // .main-blok__button
 
-    }
+   &__button {
+   }
 
-    // .main-blok__counter
+   // .main-blok__people
 
-    &__counter {
-        display: flex;
-        gap: toRem(30);
-        @include adaptiveValue("padding-bottom", 218, 30);
-        @include adaptiveValue("gap", 30, 10);
-        @media (max-width:$mobileSmall) {
-            text-align: center;
-        }
+   &__people {
+   }
 
-    }
+   // .main-blok__people-everything
 
-    // .main-blok__last-line
+   &__people-everything {
+   }
 
-    &__last-line {}
+   // .main-blok__people-number
 
-    // .main-blok__button
+   &__people-number {
+   }
 
-    &__button {}
+   // .main-blok__people-finished
 
-    // .main-blok__people
+   &__people-finished {
+   }
 
-    &__people {}
+   // .main-blok__money
 
-    // .main-blok__people-everything
+   &__money {
+   }
 
-    &__people-everything {}
+   // .main-blok__money-body
 
-    // .main-blok__people-number
+   &__money-body {
+   }
 
-    &__people-number {}
+   // .main-blok__money-earned
 
-    // .main-blok__people-finished
+   &__money-earned {
+   }
 
-    &__people-finished {}
+   // .main-blok__money-number
 
-    // .main-blok__money
+   &__money-number {
+   }
 
-    &__money {}
+   // .main-blok__money-progress
 
-    // .main-blok__money-body
+   &__money-progress {
+   }
 
-    &__money-body {}
+   // .main-blok__money-scale
 
-    // .main-blok__money-earned
-
-    &__money-earned {}
-
-    // .main-blok__money-number
-
-    &__money-number {}
-
-    // .main-blok__money-progress
-
-    &__money-progress {}
-
-    // .main-blok__money-scale
-
-    &__money-scale {}
+   &__money-scale {
+   }
 }
-
-
 
 .time-blok {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 102px;
-height: 112px;
-background: #121212;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 102px;
+   height: 112px;
+   background: #121212;
+
+   & > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
 }
 
-.number{
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700; 
-}
-.measurement{
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400; 
-    opacity: 0.4; 
+.number {
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
 }
 
-.button {}
+.measurement {
+   text-align: center;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   opacity: 0.4;
+}
+
+.button {
+}
 
 //====================================================================================================
