@@ -54,31 +54,71 @@
    // .main-blok__last-line
 
    &__last-line {
+      width: 100%;
+      gap: toRem(80);
+      background: rgb(18, 18, 18);
+      position: absolute;
+   }
+
+   .last-line__container-big {
+      align-items: center;
+      display: flex;
+      @include adaptiveValue("padding-left", 230, 30);
+      @include adaptiveValue("padding-top", 35, 10);
+      @include adaptiveValue("padding-bottom", 28, 10);
+      gap: toRem(80);
    }
 
    // .main-blok__button
 
    &__button {
+      background: linear-gradient(140.99deg, rgb(223, 89, 80) 11.194%, rgb(69, 16, 70) 93.72%);
    }
 
    // .main-blok__people
 
    &__people {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: toRem(10);
+      width: 251px;
+height: 58px;
+
+   }
+
+   // .main-blok__everything
+
+   &__everything {
+      display: flex;
+      gap: auto;
+      gap: toRem(120);
+
    }
 
    // .main-blok__people-everything
 
    &__people-everything {
-   }
+      opacity: 0.4;   }
 
    // .main-blok__people-number
 
    &__people-number {
+
+   }
+
+   // .main-blok__finished
+
+   &__finished {
+      display: flex;
+      gap: toRem(37);
+
    }
 
    // .main-blok__people-finished
 
    &__people-finished {
+      opacity: 0.4;
    }
 
    // .main-blok__money
