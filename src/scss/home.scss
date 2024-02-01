@@ -62,8 +62,12 @@
 
    .last-line__container-big {
       align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      display: grid;
       display: flex;
-      @include adaptiveValue("padding-left", 230, 30);
+      @include adaptiveValue("padding-right", 210, 30);
+      @include adaptiveValue("padding-left", 210, 30);
       @include adaptiveValue("padding-top", 35, 10);
       @include adaptiveValue("padding-bottom", 28, 10);
       gap: toRem(80);
@@ -82,29 +86,24 @@
       flex-direction: column;
       justify-content: center;
       gap: toRem(10);
-      width: 251px;
-height: 58px;
-
    }
 
    // .main-blok__everything
 
    &__everything {
       display: flex;
-      gap: auto;
       gap: toRem(120);
-
    }
 
    // .main-blok__people-everything
 
    &__people-everything {
-      opacity: 0.4;   }
+      opacity: 0.4;
+   }
 
    // .main-blok__people-number
 
    &__people-number {
-
    }
 
    // .main-blok__finished
@@ -112,7 +111,6 @@ height: 58px;
    &__finished {
       display: flex;
       gap: toRem(37);
-
    }
 
    // .main-blok__people-finished
@@ -124,16 +122,24 @@ height: 58px;
    // .main-blok__money
 
    &__money {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(12);
    }
 
    // .main-blok__money-body
 
    &__money-body {
+      display: flex;
+      gap: toRem(30);
+      @include adaptiveValue("padding-right", 435, 30);
+
    }
 
    // .main-blok__money-earned
 
    &__money-earned {
+      opacity: 0.4;
    }
 
    // .main-blok__money-number
@@ -144,11 +150,20 @@ height: 58px;
    // .main-blok__money-progress
 
    &__money-progress {
+      max-width: toRem(600);
+      height: 6px;
+      overflow: hidden;
+      background: linear-gradient(140.99deg, rgb(223, 89, 80) 12.127%, rgb(69, 16, 70) 93.197%);
    }
 
    // .main-blok__money-scale
 
    &__money-scale {
+      position: relative;
+      left: 75%;
+      max-width: 174px;
+      height: 100%;
+      background-color: #ddd;
    }
 }
 
