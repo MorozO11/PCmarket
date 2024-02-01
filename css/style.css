@@ -306,6 +306,13 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -ms-grid;
+  display: grid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,15 +335,12 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.625rem;
-  width: 251px;
-  height: 58px;
 }
 
 .main-blok__everything {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: auto;
   gap: 7.5rem;
 }
 
@@ -353,6 +357,43 @@ h6 {
 
 .main-blok__people-finished {
   opacity: 0.4;
+}
+
+.main-blok__money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+}
+
+.main-blok__money-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.875rem;
+}
+
+.main-blok__money-earned {
+  opacity: 0.4;
+}
+
+.main-blok__money-progress {
+  max-width: 37.5rem;
+  height: 6px;
+  overflow: hidden;
+  background: linear-gradient(140.99deg, rgb(223, 89, 80) 12.127%, rgb(69, 16, 70) 93.197%);
+}
+
+.main-blok__money-scale {
+  position: relative;
+  left: 75%;
+  max-width: 174px;
+  height: 100%;
+  background-color: #ddd;
 }
 
 .time-blok {
@@ -448,7 +489,11 @@ h6 {
   }
 
   .main-blok .last-line__container-big {
-    padding-left: 14.375rem;
+    padding-right: 13.125rem;
+  }
+
+  .main-blok .last-line__container-big {
+    padding-left: 13.125rem;
   }
 
   .main-blok .last-line__container-big {
@@ -457,6 +502,10 @@ h6 {
 
   .main-blok .last-line__container-big {
     padding-bottom: 1.75rem;
+  }
+
+  .main-blok__money-body {
+    padding-right: 27.1875rem;
   }
 }
 
@@ -508,6 +557,10 @@ h6 {
   }
 
   .main-blok .last-line__container-big {
+    padding-right: 1.875rem;
+  }
+
+  .main-blok .last-line__container-big {
     padding-left: 1.875rem;
   }
 
@@ -517,6 +570,10 @@ h6 {
 
   .main-blok .last-line__container-big {
     padding-bottom: 0.625rem;
+  }
+
+  .main-blok__money-body {
+    padding-right: 1.875rem;
   }
 }
 
@@ -798,15 +855,27 @@ h6 {
     }
 }
 
-@supports (padding-left: clamp( 1.875rem , -0.8460884354rem  +  13.6054421769vw , 14.375rem )) {
+@supports (padding-right: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem )) {
     .main-blok .last-line__container-big {
-      padding-left: clamp( 1.875rem , -0.8460884354rem  +  13.6054421769vw , 14.375rem );
+      padding-right: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem );
     }
 }
 
-@supports not (padding-left: clamp( 1.875rem , -0.8460884354rem  +  13.6054421769vw , 14.375rem )) {
+@supports not (padding-right: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem )) {
     .main-blok .last-line__container-big {
-      padding-left: calc(1.875rem + 12.5 * (100vw - 20rem) / 91.875);
+      padding-right: calc(1.875rem + 11.25 * (100vw - 20rem) / 91.875);
+    }
+}
+
+@supports (padding-left: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem )) {
+    .main-blok .last-line__container-big {
+      padding-left: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem );
+    }
+}
+
+@supports not (padding-left: clamp( 1.875rem , -0.5739795918rem  +  12.2448979592vw , 13.125rem )) {
+    .main-blok .last-line__container-big {
+      padding-left: calc(1.875rem + 11.25 * (100vw - 20rem) / 91.875);
     }
 }
 
@@ -831,6 +900,18 @@ h6 {
 @supports not (padding-bottom: clamp( 0.625rem , 0.3801020408rem  +  1.2244897959vw , 1.75rem )) {
     .main-blok .last-line__container-big {
       padding-bottom: calc(0.625rem + 1.125 * (100vw - 20rem) / 91.875);
+    }
+}
+
+@supports (padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem )) {
+    .main-blok__money-body {
+      padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem );
+    }
+}
+
+@supports not (padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem )) {
+    .main-blok__money-body {
+      padding-right: calc(1.875rem + 25.3125 * (100vw - 20rem) / 91.875);
     }
 }
 }
