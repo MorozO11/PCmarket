@@ -309,10 +309,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  display: -ms-grid;
-  display: grid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,7 +501,7 @@ h6 {
   }
 
   .main-blok__money-body {
-    padding-right: 27.1875rem;
+    padding-right: 25rem;
   }
 }
 
@@ -903,15 +899,15 @@ h6 {
     }
 }
 
-@supports (padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem )) {
+@supports (padding-right: clamp( 1.875rem , -3.1590136054rem  +  25.1700680272vw , 25rem )) {
     .main-blok__money-body {
-      padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem );
+      padding-right: clamp( 1.875rem , -3.1590136054rem  +  25.1700680272vw , 25rem );
     }
 }
 
-@supports not (padding-right: clamp( 1.875rem , -3.6352040816rem  +  27.5510204082vw , 27.1875rem )) {
+@supports not (padding-right: clamp( 1.875rem , -3.1590136054rem  +  25.1700680272vw , 25rem )) {
     .main-blok__money-body {
-      padding-right: calc(1.875rem + 25.3125 * (100vw - 20rem) / 91.875);
+      padding-right: calc(1.875rem + 23.125 * (100vw - 20rem) / 91.875);
     }
 }
 }
