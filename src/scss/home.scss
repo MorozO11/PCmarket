@@ -63,8 +63,6 @@
    .last-line__container-big {
       align-items: center;
       justify-content: center;
-      flex-wrap: nowrap;
-      display: grid;
       display: flex;
       @include adaptiveValue("padding-right", 210, 30);
       @include adaptiveValue("padding-left", 210, 30);
@@ -132,7 +130,7 @@
    &__money-body {
       display: flex;
       gap: toRem(30);
-      @include adaptiveValue("padding-right", 435, 30);
+      @include adaptiveValue("padding-right", 400, 30);
 
    }
 
