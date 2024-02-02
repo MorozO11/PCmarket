@@ -58,17 +58,23 @@
       gap: toRem(80);
       background: rgb(18, 18, 18);
       position: absolute;
+     
    }
 
    .last-line__container-big {
       align-items: center;
       justify-content: center;
       display: flex;
-      @include adaptiveValue("padding-right", 210, 30);
-      @include adaptiveValue("padding-left", 210, 30);
-      @include adaptiveValue("padding-top", 35, 10);
-      @include adaptiveValue("padding-bottom", 28, 10);
-      gap: toRem(80);
+      padding-top: toRem(43);
+      padding-bottom:toRem(43) ;
+      // @include adaptiveValue("padding-top", 43, 10);
+      // @include adaptiveValue("padding-bottom", 43, 10);
+      @include adaptiveValue("gap", 80, 10);
+      @media (max-width: $tablet) {
+         display: flex;
+         flex-wrap: wrap;
+      }
+     
    }
 
    // .main-blok__button
@@ -120,9 +126,24 @@
    // .main-blok__money
 
    &__money {
+      position: relative;
       display: flex;
       flex-direction: column;
       gap: toRem(12);
+      &::before{
+         content:"0";
+         opacity: 0.4;
+         position: absolute;
+         left: 0;
+         bottom: -20px;
+      }
+      &::after{
+         content:"1 000 000₴";
+         opacity: 0.4;
+         position: absolute;
+         right: 0;
+         bottom: -20px;
+      }
    }
 
    // .main-blok__money-body
@@ -131,7 +152,6 @@
       display: flex;
       gap: toRem(30);
       @include adaptiveValue("padding-right", 400, 30);
-
    }
 
    // .main-blok__money-earned
@@ -146,6 +166,7 @@
    }
 
    // .main-blok__money-progress
+   
 
    &__money-progress {
       max-width: toRem(600);
@@ -159,7 +180,6 @@
    &__money-scale {
       position: relative;
       left: 75%;
-      max-width: 174px;
       height: 100%;
       background-color: #ddd;
    }
