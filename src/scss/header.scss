@@ -7,10 +7,9 @@
     @include adaptiveValue("padding-top", 48, 10);
     @include adaptiveValue("padding-bottom", 48, 10);
     &._header-scroll{
-        padding-top: toRem(20);
-        padding-bottom: toRem(25);
-        background-color:#421468e3;
-
+        padding-top: toRem(15);
+        padding-bottom: toRem(15);
+        background:rgb(69, 16, 70) 93.72%;
     } 
     // .header__container-big
 
@@ -93,8 +92,7 @@
                 transition: all 0.3s ease 0s;
                 width: 100%;
                 @include adaptiveValue("height", 85, 60, 2, 768, 320);
-                background-color: #421468e3;
-                z-index: 2;
+                background: linear-gradient(141.34deg, rgb(200, 154, 252) 9.797%,rgb(124, 106, 250) 89.938%);                z-index: 2;
             }
 
             .menu-open & {

@@ -1,79 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"MarketPC"
-})
+   @@include('html/_head.htm',{ "title":"MarketPC" })
 
-<body>
-	<div class="wrapper">
-		@@include('html/_header.htm',{})
-		<main class="page">
-			<section class="page__main main-blok">
-				<div class="main-blok__container-big">
-					<div class="main-blok__container">
-						<div class="main-blok__content">
-							<h1 class="main-blok__title title">
-								Перший курс по компютерній збірці </h1>
-						</div>
-						<div id="countdown" class="main-blok__counter">
-							<div class="time-blok" >
-								<ul class="days">
-									<li class="number days-js">18</li>
-									<li class="measurement">Днів</li>
-								</ul>
-							</div>
-							<div class="time-blok" >
-								<ul class="hours">
-									<li class="number hours-js">18</li>
-									<li class="measurement">Годин</li>
-								</ul>
-							</div>
-							<div class="time-blok" >
-								<ul class="minutes">
-									<li class="number minutes-js">18</li>
-									<li class="measurement">Хвилин</li>
-								</ul>
-							</div>
-							<div class="time-blok">
-								<ul class="seconds">
-									<li class="number seconds-js">18</li>
-									<li class="measurement">Сукунд</li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="main-blok__last-line last-line">
-					<div class="last-line__container-big">
-					<button type="button" class="main-blok__button button">Замовити курс</button>
-					<div class="main-blok__people">
-						<div class="main-blok__everything">
-							<div class="main-blok__people-everything">Учнів всього:</div>
-							<div class="main-blok__people-number">200</div>
-						</div>
-						<div class="main-blok__finished">
-							<div class="main-blok__people-finished">Успішно закінчили курс:</div>
-							<div class="main-blok__people-number">190</div>
-						</div>
-					</div>
-					<div class="main-blok__money">
-						<div class="main-blok__money-body">
-							<div class="main-blok__money-earned">Зароблено учнями:</div>
-							<div class="main-blok__money-number">400 000₴</div>
-						</div>
-						<div class="main-blok__money-progress">
-							<div class="main-blok__money-scale">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</section>
-		</main>
-		@@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_js.htm',{})
-</body>
-
+   <body>
+      <div class="wrapper">
+         @@include('html/_header.htm',{})
+         <main class="page">
+            <section class="page__main main-blok">
+               <div class="main-blok__container-big">
+                  <div class="main-blok__container">
+                     <div class="main-blok__content">
+                        <h1 class="main-blok__title title">Перший курс по компютерній збірці</h1>
+                     </div>
+                     <div id="countdown" class="main-blok__counter">
+                        <div class="time-blok">
+                           <ul class="days">
+                              <li class="number days-js">18</li>
+                              <li class="measurement">Днів</li>
+                           </ul>
+                        </div>
+                        <div class="time-blok">
+                           <ul class="hours">
+                              <li class="number hours-js">18</li>
+                              <li class="measurement">Годин</li>
+                           </ul>
+                        </div>
+                        <div class="time-blok">
+                           <ul class="minutes">
+                              <li class="number minutes-js">18</li>
+                              <li class="measurement">Хвилин</li>
+                           </ul>
+                        </div>
+                        <div class="time-blok">
+                           <ul class="seconds">
+                              <li class="number seconds-js">18</li>
+                              <li class="measurement">Сукунд</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main-blok__last-line last-line">
+                  <div class="last-line__container-big">
+                     <button type="button" class="main-blok__button button">Замовити курс</button>
+                     <div class="main-blok__people">
+                        <div class="main-blok__everything">
+                           <div class="main-blok__people-everything">Учнів всього:</div>
+                           <div class="main-blok__people-number">200</div>
+                        </div>
+                        <div class="main-blok__finished">
+                           <div class="main-blok__people-finished">Успішно закінчили курс:</div>
+                           <div class="main-blok__people-number">190</div>
+                        </div>
+                     </div>
+                     <div class="main-blok__money">
+                        <div class="main-blok__money-body">
+                           <div class="main-blok__money-earned">Зароблено учнями:</div>
+                           <div class="main-blok__money-number">400 000₴</div>
+                        </div>
+                        <div class="main-blok__money-progress">
+                           <div class="main-blok__money-scale"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__about about">
+               <div class="page__container-big">
+                  <div class="page__container">
+                      <div class="page__imge">
+                     <div class="image-blok__item">
+                        <img src="@img/PC.jpg" alt="#">
+                     </div>
+                  </div>
+                     <div class="page__content">
+                        <h2 class="page__title title">Чим ми займаємося?</h2>
+                        <div class="page__text text">
+                           <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci
+                              fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum
+                              feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         @@include('html/_footer.htm',{})
+      </div>
+      @@include('html/_js.htm',{})
+   </body>
 </html>
