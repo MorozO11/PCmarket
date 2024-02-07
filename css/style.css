@@ -564,6 +564,10 @@ h6 {
     padding-left: 8.75rem;
   }
 
+  .page__content {
+    gap: 2.8125rem;
+  }
+
   .page__title {
     font-size: 3rem;
   }
@@ -632,6 +636,10 @@ h6 {
     padding-left: 0.625rem;
   }
 
+  .page__content {
+    gap: 0.625rem;
+  }
+
   .page__title {
     font-size: 1.875rem;
   }
@@ -668,6 +676,7 @@ h6 {
   }
 
   .page__content {
+    padding-left: 0;
     padding-bottom: 2.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1009,6 +1018,18 @@ h6 {
 @supports not (padding-left: clamp( 0.625rem , -1.143707483rem  +  8.843537415vw , 8.75rem )) {
     .page__content {
       padding-left: calc(0.625rem + 8.125 * (100vw - 20rem) / 91.875);
+    }
+}
+
+@supports (gap: clamp( 0.625rem , 0.1488095238rem  +  2.380952381vw , 2.8125rem )) {
+    .page__content {
+      gap: clamp( 0.625rem , 0.1488095238rem  +  2.380952381vw , 2.8125rem );
+    }
+}
+
+@supports not (gap: clamp( 0.625rem , 0.1488095238rem  +  2.380952381vw , 2.8125rem )) {
+    .page__content {
+      gap: calc(0.625rem + 2.1875 * (100vw - 20rem) / 91.875);
     }
 }
 
