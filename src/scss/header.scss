@@ -92,7 +92,7 @@
                 transition: all 0.3s ease 0s;
                 width: 100%;
                 @include adaptiveValue("height", 85, 60, 2, 768, 320);
-                background: linear-gradient(141.34deg, rgb(200, 154, 252) 9.797%,rgb(124, 106, 250) 89.938%);                z-index: 2;
+                background: rgb(69, 16, 70) 93.72%;                z-index: 2;
             }
 
             .menu-open & {
