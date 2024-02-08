@@ -219,8 +219,8 @@
    // .page__about
 
    &__about {
-      @include adaptiveValue("padding-top", 200, 30);
-      @include adaptiveValue("padding-bottom", 200, 30);
+      @include adaptiveValue("padding-top", 80, 30);
+      @include adaptiveValue("padding-bottom", 80, 30);
    }
 
    // .page__container-big
@@ -253,20 +253,21 @@
          border: 15px solid;
          border-image-source: linear-gradient(141.34deg, rgb(200, 154, 252) 9.526%, rgb(124, 106, 250) 90.216%);
          border-image-slice: 1;
+         max-height: 300px;
+
       }
    }
 
    // .page__content
 
    &__content {
-      @include adaptiveValue("padding-left", 140, 10);
+      @include adaptiveValue("padding-left", 140, 30,2,1420,992);
       @include adaptiveValue("gap", 45, 10);
-
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: toRem(45);
       @media (max-width: $tablet) {
-         padding-left: 0;
          padding-bottom: toRem(40);
          align-items: center;
          text-align: center;
