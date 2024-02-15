@@ -5,6 +5,6 @@
     font-size: toRem(64);
     font-weight: 700;
     line-height: math.div(90, 70);
-    @include adaptiveValue("font-size", 64, 30);
+    @include adaptiveValue("font-size", 48, 30);
 
 }
